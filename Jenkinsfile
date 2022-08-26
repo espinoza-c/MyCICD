@@ -9,14 +9,10 @@ pipeline{
     stage('Run Test') {
       parallel {
         stage('Unit test'){
-          steps{
-            bat "dotnet sonarscanner begin /k:'Calculator' /d:sonar.host.url='http://localhost:9001' /d:sonar.cs.vscoveragexml.reportsPaths='${unitTestPath}/coverage.xml' /d:sonar.coverage.exclusions='${unitTestPath}/**/src/**/*.csproj,!${unitTestPath}/xUnitTests/xUnitTests.csproj' /d:sonar.login=${token}"
-            bat "dotnet coverage collect 'dotnet test ${unitTestPath}/xUnitTest' -f xml  -o '${unitTestPath}/coverage.xml'"
-            bat "dotnet build ${unitTestPath}/src"
-            bat "dotnet sonarscanner end /d:sonar.login=${token}"
-
-          }
-
+          bat "dotnet sonarscanner begin /k:'Calculator' /d:sonar.host.url='http://localhost:9001' /d:sonar.cs.vscoveragexml.reportsPaths=./Unit Testing with mock/coverage.xml /d:sonar.coverage.exclusions='./Unit Testing with mock/**/src/**/*.csproj,!./Unit Testing with mock/xUnitTests/xUnitTests.csproj' /d:sonar.login=${token}"
+          bat "dotnet coverage collect 'dotnet test ./Unit Testing with mock/xUnitTest' -f xml  -o './Unit Testing with mock/coverage.xml'"
+          bat "dotnet build ./Unit Testing with mock/src"
+          bat "dotnet sonarscanner end /d:sonar.login=${token}"
         }
       }
     }
