@@ -6784,11 +6784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\xUnitTests\\xUnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\xUnitTests\\xUnitTests.csproj",
       "projectName": "xUnitTests",
-      "projectPath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\xUnitTests\\xUnitTests.csproj",
+      "projectPath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\xUnitTests\\xUnitTests.csproj",
       "packagesPath": "C:\\Users\\a875026\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\xUnitTests\\obj\\",
+      "outputPath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\xUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a875026\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6805,8 +6805,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\Calculators.csproj": {
-              "projectPath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\Calculators.csproj"
+            "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\src\\Calculators.csproj": {
+              "projectPath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\src\\Calculators.csproj"
             }
           }
         }

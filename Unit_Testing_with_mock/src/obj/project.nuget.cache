@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N2r43mL+KI3O+5PvzPYeNs53XqawpAK68CQwPxS9IpXNsAMRzg0Q/DKgirbQyIPj/f5u4Mps8wib/rk/7Kx5/w==",
+  "dgSpecHash": "Wss+Zhbod2bl7GmgwG7LRf89nyfFvm0BC9YVe9jki1N/8hvCw+RAvtPSg3dCMyyruOsQGx17ne1cFFK/vlcXAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\Calculators.csproj",
+  "projectFilePath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\src\\Calculators.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

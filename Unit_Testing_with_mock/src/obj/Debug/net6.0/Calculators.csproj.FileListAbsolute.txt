@@ -28,3 +28,18 @@ C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\obj\Debug\net6.0\refin
 C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\obj\Debug\net6.0\Calculators.pdb
 C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\obj\Debug\net6.0\Calculators.genruntimeconfig.cache
 C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\obj\Debug\net6.0\ref\Calculators.dll
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\bin\Debug\net6.0\Calculators.exe
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\bin\Debug\net6.0\Calculators.deps.json
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\bin\Debug\net6.0\Calculators.runtimeconfig.json
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\bin\Debug\net6.0\Calculators.dll
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\bin\Debug\net6.0\Calculators.pdb
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.csproj.AssemblyReference.cache
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.AssemblyInfoInputs.cache
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.AssemblyInfo.cs
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.csproj.CoreCompileInputs.cache
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.dll
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\refint\Calculators.dll
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.pdb
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\Calculators.genruntimeconfig.cache
+C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\src\obj\Debug\net6.0\ref\Calculators.dll

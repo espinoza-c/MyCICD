@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H4dWHV9BkIfLzGlNpjlgxiBYn/7LcRWLAD21kWpAUuf54uuHhspnnzLu0FbNQiU6b1T14bwI3rBYWYvqExfVfg==",
+  "dgSpecHash": "hlgUGvpEZ7u79+vTlz6ZTar6dDoEwIjTf4uLbYhclLGYu9AfWPK1CMwk0r0kQ3B5wlHeYWe/BtaUO3TelC2qaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\xUnitTests\\xUnitTests.csproj",
+  "projectFilePath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\xUnitTests\\xUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a875026\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\a875026\\.nuget\\packages\\autofac.extras.moq\\6.1.0\\autofac.extras.moq.6.1.0.nupkg.sha512",
