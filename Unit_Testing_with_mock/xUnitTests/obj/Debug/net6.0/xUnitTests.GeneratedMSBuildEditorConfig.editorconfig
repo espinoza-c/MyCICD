@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = xUnitTests
-build_property.ProjectDir = C:\Users\a875026\source\repos\MainProject\Unit_Testing_with_mock\xUnitTests\
+build_property.ProjectDir = C:\Dev\projects\QA\MyCICD\Unit_Testing_with_mock\xUnitTests\

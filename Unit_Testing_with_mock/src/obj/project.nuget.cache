@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wss+Zhbod2bl7GmgwG7LRf89nyfFvm0BC9YVe9jki1N/8hvCw+RAvtPSg3dCMyyruOsQGx17ne1cFFK/vlcXAw==",
+  "dgSpecHash": "YjUKhnetK1QA105Mwl1OVwD1uOsoDB69fXOFbHmzK2ANKWAVcECokaTRbQhO6zEQ5BEE0o5WN+GWHBQZFd3CqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a875026\\source\\repos\\MainProject\\Unit_Testing_with_mock\\src\\Calculators.csproj",
+  "projectFilePath": "C:\\Dev\\projects\\QA\\MyCICD\\Unit_Testing_with_mock\\src\\Calculators.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

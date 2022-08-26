@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="81" TotalStatements="82" CoveragePercent="99" ReportType="Xml" DotCoverVersion="2022.2.2">
+  <Assembly Name="Calculators" CoveredStatements="28" TotalStatements="29" CoveragePercent="97">
+    <Namespace Name="Calculators" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+      <Type Name="Calculator" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Method Name="Add(float,float):float" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="Div(float,float):float" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="Mul(float,float):float" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="Sub(float,float):float" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="Series" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Constructor Name="Series(ICalculator)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Factorial(int):int" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="Fibonacci(int):int" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Type Name="Program" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+      <Method Name="&lt;Main&gt;$(string[]):void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+    </Type>
+  </Assembly>
+  <Assembly Name="xUnitTests" CoveredStatements="53" TotalStatements="53" CoveragePercent="100">
+    <Namespace Name="xUnitTests" CoveredStatements="53" TotalStatements="53" CoveragePercent="100">
+      <Type Name="CalculatorShould" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+        <Method Name="Add_TwoFloatNumbers_ReturnsCorrectSum():void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        <Method Name="Div_TwoFloatNumbers_ReturnsCorrectDivision(float,float):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="Mul_TwoFloatNumbers_ReturnsCorrectMultiplication(float,float):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="Sub_TwoFloatNumbers_ReturnsCorrectSubtraction():void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+      </Type>
+      <Type Name="DivCero" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Method Name="Div_ByZero_ReturnsDivideByZeroException():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+          <AnonymousMethod Name="():object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+      </Type>
+      <Type Name="MoqICalculator" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
+        <Method Name="Factorial_SingleNumber_ReturnsSingleNumberFactorial():void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+          <AnonymousMethod Name="(int,int):int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="Fibonacci_SingleNumber_ReturnsSingleNumberFibonacci():void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+          <AnonymousMethod Name="(int,int):int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
