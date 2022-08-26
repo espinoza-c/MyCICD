@@ -15,6 +15,17 @@ pipeline{
             bat "dotnet sonarscanner end /d:sonar.login=${token}"
           }
         }
+        stage('Mobile Tests') {
+          steps{
+            echo "Running Mobile Test"
+
+          }
+        }
+        stage('End-to-end Tests') {
+          steps {
+            echo "Running End to end tests"
+          }
+        }
       }
     }
   }
