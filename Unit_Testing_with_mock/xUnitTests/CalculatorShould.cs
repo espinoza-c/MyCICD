@@ -20,7 +20,7 @@ namespace xUnitTests
             float expected = numeroDos + numeroUno;
 
             //Add
-            float isEqual = addValidator.Add(numeroUno, numeroDos);
+            float isEqual = Calculator.Add(numeroUno, numeroDos);
 
             //Assert
             Assert.Equal(expected, isEqual);
