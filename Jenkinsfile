@@ -9,7 +9,7 @@ pipeline{
       parallel {
         stage('Unit test'){
           steps{
-            bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.flex.cobertura.reportsPaths=${unitTestPath}/cobertura.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
+            bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.flex.cobertura.reportsPaths=${unitTestPath}/output.cobertura.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
             bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f cobertura -o ${unitTestPath}/output" 
             bat "dotnet build ./Unit_Testing_with_mock/src"
             bat "dotnet sonarscanner end /d:sonar.login=${token}"
