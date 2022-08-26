@@ -1,0 +1,4 @@
+﻿C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Calculator.cs
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\ICalculator.cs
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Program.cs
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Series.cs

@@ -1,0 +1,7 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Calculator.cs	4	_Calculators.Calculator.Add$float.float$	0	2
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Calculator.cs	9	_Calculators.Calculator.Sub$float.float$	0	2
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Calculator.cs	14	_Calculators.Calculator.Mul$float.float$	0	2
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Calculator.cs	19	_Calculators.Calculator.Div$float.float$	0	4
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Series.cs	11	_Calculators.Series.Factorial$int$	0	4
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\src\Series.cs	18	_Calculators.Series.Fibonacci$int$	0	4

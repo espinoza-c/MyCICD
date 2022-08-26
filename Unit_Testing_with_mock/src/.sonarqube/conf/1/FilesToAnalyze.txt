@@ -1,0 +1,10 @@
+﻿C:\Users\a875026\source\repos\Practica Unit Test c# 1\xUnitTests\CalculatorShould.cs
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\xUnitTests\DivCero.cs
+C:\Users\a875026\source\repos\Practica Unit Test c# 1\xUnitTests\MoqICalculator.cs
+C:\Users\a875026\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\a875026\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\a875026\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\a875026\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\a875026\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\a875026\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\a875026\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
