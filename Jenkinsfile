@@ -19,7 +19,7 @@ pipeline{
         stage('SonarQube Analysis') {
           steps {
             withSonarQubeEnv('SonarQube Server') {
-              bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
+              bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
               bat "dotnet build ./Unit_Testing_with_mock/src"
               bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f xml -o ${unitTestPath}/xUnitTests/coverage.xml" 
               bat "dotnet sonarscanner end /d:sonar.login=${token}"
