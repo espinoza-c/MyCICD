@@ -17,7 +17,7 @@ pipeline{
          // }
         //}
         stage('SonarQube Analysis') {
-          script {
+          steps {
             withSonarQubeEnv('My SonarQube Server') {
               bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
               bat "dotnet build ./Unit_Testing_with_mock/src"
