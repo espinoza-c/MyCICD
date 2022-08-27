@@ -14,7 +14,7 @@ pipeline{
             bat "dotnet build ./Unit_Testing_with_mock/src"
             bat "dotnet dotcover test ${unitTestPath}/xUnitTests --dcOutput=\"${unitTestPath}/xUnitTests\""
             bat "dotnet sonarscanner end /d:sonar.login=${token}"
-
+            publishCoverage adapters: [coberturaAdapter("${unitTestPath}/xUnitTests/output.cobertura.xml")]
           }
         }
       }
