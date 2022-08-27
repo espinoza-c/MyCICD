@@ -15,7 +15,7 @@ pipeline{
             bat "dotnet sonarscanner end /d:sonar.login=${token}"
             //publishCoverage adapters: [coberturaAdapter("${unitTestPath}/xUnitTests/output.cobertura.xml")]
           }
-        },
+        }
         stage('Qualty Gates') {
           timeout(time: 1, unit:'HOURS') {
             def qg = waitForQualityGate()
