@@ -7,14 +7,21 @@ pipeline{
   stages{
     stage('Run Test') {
       parallel {
-        stage('Unit test'){
+        stage('SonarQube Analysis'){
           steps{
-            bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.flex.cobertura.reportPaths=${unitTestPath}/xUnitTests/output.cobertura.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
-            //bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f cobertura -o ${unitTestPath}/output" 
+            bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
             bat "dotnet build ./Unit_Testing_with_mock/src"
-            bat "dotnet dotcover test ${unitTestPath}/xUnitTests --dcOutput=\"${unitTestPath}/xUnitTests/output\""
+            bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f xml -o ${unitTestPath}/coverage.xml" 
             bat "dotnet sonarscanner end /d:sonar.login=${token}"
-            publishCoverage adapters: [coberturaAdapter("${unitTestPath}/xUnitTests/output.cobertura.xml")]
+            //publishCoverage adapters: [coberturaAdapter("${unitTestPath}/xUnitTests/output.cobertura.xml")]
+          }
+        },
+        stage('Qualty Gates') {
+          timeout(time: 1, unit:'HOURS') {
+            def qg = waitForQualityGate()
+            if (qg.status != 'OK') {
+              error 'Pipeline aborted due quality gate failure: ${qg.status}'
+            }
           }
         }
       }
