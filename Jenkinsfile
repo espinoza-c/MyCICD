@@ -8,12 +8,22 @@ pipeline{
     stage('Run Test') {
       parallel {
         stage('SonarQube Analysis'){
-          steps{
-            bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
-            bat "dotnet build ./Unit_Testing_with_mock/src"
-            bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f xml -o ${unitTestPath}/coverage.xml" 
-            bat "dotnet sonarscanner end /d:sonar.login=${token}"
+          //steps{
+          //  bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
+          //  bat "dotnet build ./Unit_Testing_with_mock/src"
+          //  bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f xml -o ${unitTestPath}/coverage.xml" 
+         //   bat "dotnet sonarscanner end /d:sonar.login=${token}"
             //publishCoverage adapters: [coberturaAdapter("${unitTestPath}/xUnitTests/output.cobertura.xml")]
+         // }
+        //}
+        stage('Build + SonarQube analysis') {
+          script {
+            withSonarQubeEnv('My SonarQube Server') {
+              bat "dotnet sonarscanner begin /k:Calculator /d:sonar.host.url=http://localhost:9001 /d:sonar.cs.vscoveragexml.reportsPaths.reportPaths=${unitTestPath}/xUnitTests/coverage.xml /d:sonar.coverage.exclusions='**/*Tests.csproj' /d:sonar.login=${token}"
+              bat "dotnet build ./Unit_Testing_with_mock/src"
+              bat "dotnet coverage collect \"dotnet test ${unitTestPath}/xUnitTests\" -f xml -o ${unitTestPath}/coverage.xml" 
+              bat "dotnet sonarscanner end /d:sonar.login=${token}"
+            }
           }
         }
         stage('Qualty Gates') {
