@@ -35,7 +35,7 @@ namespace xUnitTests
             float expected = numeroUno -  numeroDos;
 
             //Add
-            float isEqual = addValidator.Sub(numeroUno, numeroDos);
+            float isEqual = Calculator.Sub(numeroUno, numeroDos);
 
             //Assert
             Assert.Equal(expected, isEqual);

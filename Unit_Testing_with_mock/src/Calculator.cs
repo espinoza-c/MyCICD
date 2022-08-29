@@ -7,7 +7,7 @@ public class Calculator
         return a + b;
     }
 
-    public float Sub(float a, float b)
+    public static float Sub(float a, float b)
     {
         return a - b;
     }
