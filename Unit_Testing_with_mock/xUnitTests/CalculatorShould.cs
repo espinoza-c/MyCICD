@@ -41,6 +41,7 @@ namespace xUnitTests
             Assert.Equal(expected, isEqual);
         }
 
+        //Parametrized tests
         [Theory]
         [InlineData(10.1,10.2)]
         [InlineData(5.2, 3.5)]
@@ -54,7 +55,7 @@ namespace xUnitTests
             Calculator mulValidator = new Calculator();
 
             //Add
-            float result = mulValidator.Mul(a, b);
+            float result = Calculator.Mul(a, b);
             float expected = a * b;
 
             //Assert

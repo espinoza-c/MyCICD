@@ -12,7 +12,7 @@ public class Calculator
         return a - b;
     }
 
-    public float Mul(float a, float b)
+    public static float Mul(float a, float b)
     {
         return a * b;
     }
